@@ -9,23 +9,25 @@ body {
     font-family: 'DynaPuff', cursive;
     text-align: center;
     margin: 0 auto;
-    max-width: 50%;
+    max-width: 72%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 h1 {
     color: rgb(77, 1, 77);
-    font-size: 52px;
+    font-size: 3em;
     font-weight: 700;
-    margin-top: 1em;
+    margin-top: 2em;
+    margin-bottom: 1em;
 }
 
 p {
-    font-size: 35px;
+    font-size: 2em;
     color: rgb(77, 1, 77);
-    margin-bottom: 1em;
+    margin-bottom: .5em;
 }
 
 .scores {
@@ -33,13 +35,14 @@ p {
     justify-content: space-around;
     font-family: inherit;
     color: rgb(77, 1, 77);
-    font-size: 18px;
+    font-size: 1em;
     margin-bottom: 2em;
 }
 .player-score, .computer-score {
     display: inline;
-    font-size: 40px;
-    color: rgb(34, 33, 33)
+    font-size: 2em;
+    color: rgb(34, 33, 33);
+    
 }
 .button-box {
     display: flex;
@@ -47,6 +50,7 @@ p {
     align-items: center;
     gap: 4em;
     margin-bottom: 3em;
+    flex-wrap: wrap;
 }
 .result {
     margin-top: 1em;
@@ -65,11 +69,11 @@ p {
 
 #rock, #paper, #scissors {
     font-family: inherit;
-    font-size: 22px;
+    font-size: 1.7em;
     border: 3px solid rgb(77, 1, 77);
     color:rgb(77, 1, 77);
     background-color: transparent;
-    padding: 16px 24px;
+    padding: 1em 1.2em;
 	border-radius:6px;
 	cursor:pointer;
 	text-decoration:none;
@@ -85,3 +89,15 @@ p {
 	position:relative;
 	top:1px;
 }
+/* 
+@media (max-width: 768px){
+   body {
+    overflow:visible;
+   }
+    .button-box  {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
+} */

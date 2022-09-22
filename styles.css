@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./images/cool-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'DynaPuff', cursive;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    color: rgb(77, 1, 77);
+    font-size: 52px;
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+p {
+    font-size: 35px;
+    color: rgb(77, 1, 77);
+    margin-bottom: 1em;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-around;
+    font-family: inherit;
+    color: rgb(77, 1, 77);
+    font-size: 18px;
+    margin-bottom: 2em;
+}
+.player-score, .computer-score {
+    display: inline;
+    font-size: 40px;
+    color: rgb(34, 33, 33)
+}
+.button-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+    margin-bottom: 3em;
+}
+.result {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+.winner {
+    display: none;
+}
+.loser {
+    display: none;
+}
+.tied {
+    display: none;
+}
+
+
+#rock, #paper, #scissors {
+    font-family: inherit;
+    font-size: 22px;
+    border: 3px solid rgb(77, 1, 77);
+    color:rgb(77, 1, 77);
+    background-color: transparent;
+    padding: 16px 24px;
+	border-radius:6px;
+	cursor:pointer;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #9b14b3;
+
+}
+#rock:hover, #paper:hover, #scissors:hover {
+	background:linear-gradient(to bottom, #a20dbd 5%, #c123de 100%);
+	background-color:#a20dbd;
+    color: white;
+}
+#rock.active, #paper:active, #scissors:active {
+	position:relative;
+	top:1px;
+}

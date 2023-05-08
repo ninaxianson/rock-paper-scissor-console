@@ -49,13 +49,13 @@ const scoreRound = () => {
 const getGameWinner = () => {
   roundResult.innerText = result;
   if (pScore === 5 && cScore === 5) {
-    result = "It's a tied game! Play again!"
+    result = "The game ended in a draw!"
     reset()
   } else if ( pScore === 5 && cScore < 5) {
-    result = "You've won the game!! Make a selection to play again!";
+    result = "You won!";
     reset()
   } else if (cScore === 5 && pScore < 5) {
-    result = "The computer won! Play again."
+    result = "The computer won."
     reset()
   } 
 }

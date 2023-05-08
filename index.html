@@ -1,40 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock, Paper, Scissors</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400;600;700" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock, Paper, Scissors Game</title>
+  <script src="index.js" defer></script>
 </head>
 <body>
-    <div>
-    <h1>WELCOME TO ROCK, PAPER, SCISSORS!</h1>
+  <section id="score-section">
+    <h1>Let's play Rock, Paper, Scissors</h1>
     <div class="scores">
-        <div class="player-display"><p>Player Score:</p>
-        <span class="player-score">0</span>
+      <div class="player-display">Player Score: <span class="player-score"></span></div>
+      <div class="computer-display">Computer Score: <span class="computer-score"></span></div>
     </div>
-    <div class="computer-display"> <p>Computer Score:</p>
-        <span class="computer-score">0</span>
-    </div>
-    </div>
-    <p class="selection-text">Please make your selection:</p>
-</div>
-<div class="winner"> <p>Congratulations! You've won the game!</p></div>
-<div class="loser"><p>The computer won. Please try again! </p> </div>
-<div class="tied"><p>You and the computer tied!!!</p>
-</div>
-<div class="result"></div>
-<div class="button-box">
+  </section>
+  <section id="player-choices">
+    <p>Make your selection:</p>
     <button id="rock">Rock</button>
     <button id="paper">Paper</button>
     <button id="scissors">Scissors</button>
-</div>
-
-    <script src="./app.js"></script>
+  </section>
+  <section id="results">
+    <div id="round-result"></div>
+  </section>
 </body>
 </html>
